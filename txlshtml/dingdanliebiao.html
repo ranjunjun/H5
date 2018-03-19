@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html style="font-size: 100px">
+<head>
+    <meta charset="UTF-8">
+    <title>订单列表</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/dingdanliebiao.css">
+    <script>
+        ~function () {
+            window.addEventListener('resize', computed, false);
+            computed();
+            function computed() {
+                let deviceW = document.documentElement.clientWidth || document.body.clientWidth;
+                if (deviceW > 640) return;
+                document.documentElement.style.fontSize = deviceW / 640 * 100 + 'px';
+            }
+        }();
+    </script>
+</head>
+<body>
+<div class="head">
+    <i class="fanhui"></i>
+    <h3 class="title">我的订单</h3>
+</div>
+<div class="container">
+    <ul class="zhuangTai">
+        <li>
+            <span>全部</span>
+        </li>
+        <li>
+            <span>进行中</span>
+        </li>
+        <li>
+            <span>待评价</span>
+        </li>
+    </ul>
+    <div class="dingdan">
+        <div class="dingdan-title">
+            <span class="riqi">20170809 09:00:00</span>
+            <p class="dingdanzhuanggtai">等待买家付款</p>
+        </div>
+        <ul class="list">
+        <li>
+            <div class="left">
+                <img src="images/3.jpeg" alt="">
+            </div>
+            <div class="right">
+                <span class="">商品名称</span>
+                <span>规格</span>
+            </div>
+            <div class="right1">
+                <span>￥199</span>
+                <span>x1</span>
+            </div>
+        </li>
+    </ul>
+    </div>
+</div>
+</body>
+</html>

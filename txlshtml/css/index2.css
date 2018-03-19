@@ -1,0 +1,99 @@
+html,body{
+    color: #222222;
+    font-size: .27rem;
+}
+.head{
+    position: fixed;
+    margin:0 0 2rem 0;
+    padding:0 .3rem;
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size:.533333rem;
+    box-shadow: 0 .06rem .1rem #e9e9e9;
+    background: #fff;
+    z-index: 1;
+}
+.head .logo{
+    padding-right: .1rem;
+    font-size:.533333rem;
+    font-weight: 600;
+}
+.head .iconfont{
+    padding-right: .4rem;
+    font-size: .63333rem;
+}
+.head .zhankai{
+    margin-left: .4rem;
+    font-size: .53333rem;
+    color: #dddddd;
+}
+#MAIN {
+    list-style: none;
+    padding: 30px 0 0;
+    margin: 0;
+}
+
+#MAIN > li {
+    position: relative;
+    width: 480px;
+    height: 270px;
+    margin: 5px auto 32px;
+    background: #000000 url("//be-fe.github.io/static/images/background/metal-net-black.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    border: 10px solid #202020;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.5);
+}
+
+.iEl {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#MAIN > li > p {
+    position: absolute;
+    left: -7px;
+    top: -7px;
+    z-index: 100000;
+    color: #666666;
+    padding: 8px;
+    margin: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #202020;
+    text-shadow: 0 1px 1px #000000;
+}
+
+#loadc {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -48px 0 0 -48px;
+}
+
+@media (max-width: 500px) {
+    #MAIN > li {
+        width: 320px;
+        height: 180px;
+    }
+}
+.big-title{
+    width:100%;
+    font-size:.5333rem;
+    text-align: center;
+    height: 1.5rem;
+    background: url("../images/jingxuanneirong.png") no-repeat;
+    background-size: 100% 100%;
+    color: #333333;
+    border-bottom:1px solid #f6f6f6;
+}
+.islider-outer .islider-pic img{
+    border-radius: 10rem;
+}

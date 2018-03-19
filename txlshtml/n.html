@@ -12,11 +12,11 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/index2.css" rel="stylesheet">
-    <link rel="css/index2.css" href="iSlider-master/src/style/iSlider.css"/>
+    <link rel="css/index2.css" href="iSlider-master/src/style/iSlider.css" />
     <link rel="stylesheet" href="pull/pulldown.css">
     <script src="pull/es6-shim.min.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" src="js/0.374b94ce46b2a84c9f0e.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" src="js/7.6f344db9564c616dd096.js"></script>
+    <!-- <script type="text/javascript" charset="utf-8" async="" src="js/0.374b94ce46b2a84c9f0e.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="js/7.6f344db9564c616dd096.js"></script> -->
     <link href="iSlider-master/demo/public/css/iSlider.css" rel="stylesheet">
     <style>
         #MAIN {
@@ -25,7 +25,7 @@
             margin: 0;
         }
 
-        #MAIN > li {
+        #MAIN>li {
             position: relative;
             width: 480px;
             height: 270px;
@@ -47,7 +47,7 @@
             width: 100%;
         }
 
-        #MAIN > li > p {
+        #MAIN>li>p {
             position: absolute;
             left: -7px;
             top: -7px;
@@ -70,7 +70,7 @@
         }
 
         @media (max-width: 500px) {
-            #MAIN > li {
+            #MAIN>li {
                 width: 320px;
                 height: 180px;
             }
@@ -88,210 +88,186 @@
             box-shadow: 0 0 .2rem .1rem #c5c5c5;
             width: 100%;
         }
+
         .scroll {
             position: absolute;
             left: 0;
             right: 0;
             top: 1rem;
             bottom: 0;
-            height:100%;
+            height: 100%;
         }
     </style>
 </head>
+
 <body style="font-size: 12px;">
-<div id="app">
-    <div class="main Router clearfix">
-        <div class="head">
-            <div class="head-left">
-                <h1 class="logo">
-                    <i class="icon iconfont icon-dashaxiaoqudizhi01"></i>
-                    凯德MALL
-                    <span class="icon iconfont zhankai icon-zelvxuanzefeiyongdaosanjiaoxingfandui"></span>
-                </h1>
+    <div id="app">
+        <div class="main Router clearfix">
+            <div class="head">
+                <div class="head-left">
+                    <h1 class="logo">
+                        <i class="icon iconfont icon-dashaxiaoqudizhi01"></i>
+                        凯德MALL
+                        <span class="icon iconfont zhankai icon-zelvxuanzefeiyongdaosanjiaoxingfandui"></span>
+                    </h1>
+                </div>
             </div>
-        </div>
-        <div class="page" id="index">
-            <div class="scroll">
-                <div class="pullDown" style="height: 2px;">
-                    <span class="icon"></span><span class="pullDownLabel"></span>
-                </div>
-                <div id="iSlider-wrapper" style="width: 100%;height: 33%;overflow: hidden;">
-                </div>
-                <div class="changJing" style="position:absolute;top: 8.3rem;left: 0;right: 0;">
-                    <h3 class="big-title"></h3>
-                    <div class="cardBox shadow-bottom margin-bottom" title="tab-container 1">
-                        <div class="imageTextBox">
-                            <h3>小女人的时尚穿搭</h3>
-                            <div class="timeBox">
-                                <p>
-                                    <em class="timeIcon"></em>
-                                    <i>14小时前</i></p>
-                            </div>
-                            <div class="imageTextShow">
-                                <a href="xiangqing.html">
-                                    <p class="showText">谁说小个子女生不能穿长款大服，其实中长款的外套穿对了，也能让小巧的你显得高高瘦瘦的哦!</p>
-                                    <div class="imgShow"
-                                         style="background-image: url(http://img1.lashouimg.com/txls/M00/00/3E/CqgBTFqqpECAKFDrAAIXYM-s_rE146.png);"></div>
-                                    <i class="line"></i>
-                                </a>
-                            </div>
-                            <div class="aidapei">
-                                <a href="xiangqing.html">
-                                    <i class="shouccang iconfont icon-msnui-collection"
-                                       style="font-size: .4rem;line-height: 1rem;color:#837bf5"></i>
-                                    <span style="font-size: .37rem;color: #cbcbcb;">爱搭配</span></a>
+            <div class="page" id="index">
+                <div class="scroll">
+                    <div class="pullDown" style="height: 2px;">
+                        <span class="icon"></span>
+                        <span class="pullDownLabel"></span>
+                    </div>
+                    <!-- 滚动内容 -->
+                    <!-- <div class="scroll-content">
+
+                    </div> -->
+                    <div id="iSlider-wrapper" style="width: 100%;height: 33%;overflow: hidden;">
+                    </div>
+                    <div class="changJing" style="position:relative;top: 0.3rem;left: 0;right: 0;">
+                        <h3 class="big-title"></h3>
+                        <div class="cardBox shadow-bottom margin-bottom" title="tab-container 1">
+                            <div class="imageTextBox">
+                                <h3>小女人的时尚穿搭</h3>
+                                <div class="timeBox">
+                                    <p>
+                                        <em class="timeIcon"></em>
+                                        <i>14小时前</i>
+                                    </p>
+                                </div>
+                                <div class="imageTextShow">
+                                    <a href="xiangqing.html">
+                                        <p class="showText">谁说小个子女生不能穿长款大服，其实中长款的外套穿对了，也能让小巧的你显得高高瘦瘦的哦!</p>
+                                        <div class="imgShow" style="background-image: url(http://img1.lashouimg.com/txls/M00/00/3E/CqgBTFqqpECAKFDrAAIXYM-s_rE146.png);"></div>
+                                        <i class="line"></i>
+                                    </a>
+                                </div>
+                                <div class="aidapei">
+                                    <a href="xiangqing.html">
+                                        <i class="shouccang iconfont icon-msnui-collection" style="font-size: .4rem;line-height: 1rem;color:#837bf5"></i>
+                                        <span style="font-size: .37rem;color: #cbcbcb;">爱搭配</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
-                <div class="mint-tab-container" style="position: absolute;top: 18.8rem;">
-                    <div class="mint-tab-container-wrap" style="height: 100%;">
-                        <div class="mint-tab-container-item" style="height: 100%;">
-                            <div class="mint-loadmore" style="height: 100%;">
-                                <div class="mint-loadmore-content">
-                                    <div class="mint-loadmore-top">
-                                        <span class="">↓</span>
-                                        <span style="display: none;">Loading...</span>
-                                        <span style="display: none;">释放更新</span></div>
-                                    <div class="cardBox shadow-bottom margin-bottom" title="tab-container 1">
-                                        <div class="imageTextBox">
-                                            <h3>小妖兔耳～之多肉成精</h3>
-                                            <div class="timeBox">
-                                                <p>
-                                                    <em class="timeIcon"></em>
-                                                    <i>02-18</i></p>
-                                                <p>
-                                                    <em class="commonIcon"></em>
-                                                    <i></i>
-                                                </p>
-                                                <p>
-                                                    <em class="likesIcon"></em>
-                                                    <i>2</i></p>
-                                            </div>
-                                            <div class="imageTextShow">
-                                                <p class="showText">我是一只小花妖，严格说我是一株多肉。</p>
-                                                <div class="imgShow"
-                                                     style="background-image: url(&quot;http://img1.lashouimg.com/txls/M00/00/21/CqgBTVqI-fuAUDaZAAFvlkL61jY899.png&quot;);"></div>
-                                                <!----></div>
-                                        </div>
-                                    </div>
-                                    <div class="cardBox shadow-bottom margin-bottom" title="tab-container 1">
-                                        <div class="imageTextBox">
-                                            <h3>当多肉遁入空门</h3>
-                                            <div class="timeBox">
-                                                <p>
-                                                    <em class="timeIcon"></em>
-                                                    <i>02-17</i></p>
-                                                <p>
-                                                    <em class="commonIcon"></em>
-                                                    <i></i>
-                                                </p>
-                                                <p>
-                                                    <em class="likesIcon"></em>
-                                                    <i>3</i></p>
-                                            </div>
-                                            <div class="imageTextShow">
-                                                <p class="showText">
-                                                    你见过大师养多肉吗？似比常人要多一份静谧、空灵之美。佛门净地搭配上肉肉，朴素、寂静、谦逊、自然……格调，如同禅的智慧一样，可意会不可言传。</p>
-                                                <!---->
-                                                <div class="imagessShow">
-                                                    <div class="ltImgBox"
-                                                         style="background-image: url(&quot;http://img1.lashouimg.com/txls/M00/00/21/CqgBTVqIOreAaGicAAImgeQwKMI909.png&quot;);"></div>
-                                                    <div class="rtImgBox">
-                                                        <div style="background-image: url(&quot;http://img1.lashouimg.com/txls/M00/00/21/CqgBTVqIOrSAAe6VAAMXNGB-hww806.png&quot;);"></div>
-                                                        <div class="moreImg"
-                                                             style="background-image: url(&quot;http://img1.lashouimg.com/txls/M00/00/21/CqgBTFqIOrGAT6qxAALzx1Q855w636.png&quot;);">
-                                                            <p class="moreImgNum">17+</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cardBox shadow-bottom margin-bottom" title="tab-container 1">
-                                        <div class="imageTextBox">
-                                            <h3>这些多肉，长大后毁三观！</h3>
-                                            <div class="timeBox">
-                                                <p>
-                                                    <em class="timeIcon"></em>
-                                                    <i>02-08</i></p>
-                                                <p>
-                                                    <em class="commonIcon"></em>
-                                                    <i></i>
-                                                </p>
-                                                <p>
-                                                    <em class="likesIcon"></em>
-                                                    <i>1</i></p>
-                                            </div>
-                                            <div class="imageTextShow">
-                                                <p class="showText">
-                                                    多肉植物肉嘟嘟的样子非常讨人喜欢，越来越多的人加入到了养多肉的行列当中。不过是植物总是会有养大的一天，有些多肉别看它小时候非常可爱，但长大了却让人难以直视。如果你是个颜值党，那么下面这几种多肉肯定不适合你养。</p>
-                                                <div class="imgShow"
-                                                     style="background-image: url(&quot;http://img1.lashouimg.com/txls/M00/00/19/CqgBTFp8KzqASXAGAAF2qJBU71o566.png&quot;);"></div>
-                                                <!----></div>
-                                        </div>
-                                    </div>
+                    </div>
+                    <div class="mint-tab-container" style="position: relative;top: 0.8rem;">
+                        <div class="cardBox shadow-bottom margin-bottom" title="tab-container 1">
+                            <div class="imageTextBox">
+                                <h3>小妖兔耳～之多肉成精</h3>
+                                <div class="timeBox">
+                                    <p>
+                                        <em class="timeIcon"></em>
+                                        <i>02-18</i>
+                                    </p>
+                                    <p>
+                                        <em class="commonIcon"></em>
+                                        <i></i>
+                                    </p>
+                                    <p>
+                                        <em class="likesIcon"></em>
+                                        <i>2</i>
+                                    </p>
+                                </div>
+                                <div class="imageTextShow">
+                                    <p class="showText">我是一只小花妖，严格说我是一株多肉。</p>
+                                    <div class="imgShow" style="background-image: url(&quot;http://img1.lashouimg.com/txls/M00/00/21/CqgBTVqI-fuAUDaZAAFvlkL61jY899.png&quot;);"></div>
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardBox shadow-bottom margin-bottom" title="tab-container 1">
+                            <div class="imageTextBox">
+                                <h3>小妖兔耳～之多肉成精</h3>
+                                <div class="timeBox">
+                                    <p>
+                                        <em class="timeIcon"></em>
+                                        <i>02-18</i>
+                                    </p>
+                                    <p>
+                                        <em class="commonIcon"></em>
+                                        <i></i>
+                                    </p>
+                                    <p>
+                                        <em class="likesIcon"></em>
+                                        <i>2</i>
+                                    </p>
+                                </div>
+                                <div class="imageTextShow">
+                                    <p class="showText">我是一只小花妖，严格说我是一株多肉。</p>
+                                    <div class="imgShow" style="background-image: url(&quot;http://img1.lashouimg.com/txls/M00/00/21/CqgBTVqI-fuAUDaZAAFvlkL61jY899.png&quot;);"></div>
+                                    <!---->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="pullUp">
-                    <span class="icon"></span><span class="pullUpLabel"></span>
+                    <div class="pullUp">
+                        <span class="icon"></span>
+                        <span class="pullUpLabel"></span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<script src="pull/pulldown.js"></script>
-<script src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="iSlider-master/demo/public/js/iSlider.min.js"></script>
-<script type="text/javascript" src="iSlider-master/demo/public/js/iSlider.animate.min.js"></script>
-<script>
-    var pull = new PullToRefresh({
-        el: '#index',
-        up: 1,
-        down: 1,
-        pulldownLength: 60,
-        pullupOffset: 40,
-        addNew: function () {
-            return new Promise(function (resolve, reject) {
-                setTimeout(function () {
-                    resolve();
-                }, 100);
-            });
-        },
-        addMore: function () {
-            return new Promise(function (resolve, reject) {
-                setTimeout(function () {
-                    resolve();
-                }, 100);
-            });
+    <script src="pull/pulldown.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="iSlider-master/demo/public/js/iSlider.min.js"></script>
+    <script type="text/javascript" src="iSlider-master/demo/public/js/iSlider.animate.min.js"></script>
+    <script>
+        var Detail = {
+            init: function () {
+                this.initPullToRefresh();
+                this.initISlider();
+            },
+            initPullToRefresh: function () {
+                var pull = new PullToRefresh({
+                    el: '#index',
+                    up: 1,
+                    down: 1,
+                    pulldownLength: 60,
+                    pullupOffset: 40,
+                    addNew: function () {
+                        return new Promise(function (resolve, reject) {
+                            setTimeout(function () {
+                                resolve();
+                            }, 100);
+                        });
+                    },
+                    addMore: function () {
+                        return new Promise(function (resolve, reject) {
+                            setTimeout(function () {
+                                resolve();
+                            }, 100);
+                        });
+                    }
+                });
+            },
+            initISlider: function () {
+                var data = [
+                    {
+                        content: '<div style="height:100%;width:100%;background: url(images/3.jpeg) no-repeat;background-size: 100% 100%;">'
+                            + '<div style="width:100%;height:31%;background:#000000;background:rgba(0,0,0,0.2);text-align:center;margin-top: 30%;padding-top: 2rem">'
+                            + '<small style="color:#FFF;font-size:14px;">娱乐/生活/购物/美食</small>'
+                            + '<p style="color:#FFF;font-size:20px;">#过年那些事#</p>'
+                            + '</div>'
+                            + '</div>'
+                    },
+                    { content: "images/3.jpeg" }, { content: "images/3.jpeg" }, { content: "images/3.jpeg" }, { content: "images/3.jpeg" },
+                ];
+                var S = new iSlider(document.getElementById('iSlider-wrapper'), data, {
+                    isLooping: 1,
+                    isOverspread: 1,
+                    isAutoplay: 0,
+                    animateTime: 100,
+                    animateType: 'depth',
+                });
+            }
         }
-    });
-    var data = [
-        {
-            content: '<div style="height:100%;width:100%;background: url(images/3.jpeg) no-repeat;background-size: 100% 100%;">'
-            + '<div style="width:100%;height:31%;background:#000000;background:rgba(0,0,0,0.2);text-align:center;margin-top: 30%;padding-top: 2rem">'
-            + '<small style="color:#FFF;font-size:14px;">娱乐/生活/购物/美食</small>'
-            + '<p style="color:#FFF;font-size:20px;">#过年那些事#</p>'
-            + '</div>'
-            + '</div>'
-        },
-        {content: "images/3.jpeg"}, {content: "images/3.jpeg"}, {content: "images/3.jpeg"}, {content: "images/3.jpeg"},
-    ];
-    var S = new iSlider(document.getElementById('iSlider-wrapper'), data, {
-        isLooping: 1,
-        isOverspread: 1,
-        isAutoplay: 0,
-        animateTime: 100,
-        animateType: 'depth',
-    });
 
-
-
-
-</script>
-<script>document.title = '\u200E'</script>
+        window.onload = Detail.init.bind(Detail);
+    </script>
+    <script>document.title = '\u200E'</script>
 </body>
+
 </html>

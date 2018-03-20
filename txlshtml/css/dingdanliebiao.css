@@ -18,8 +18,7 @@
 }
 
 .container .zhuangTai {
-    padding: 0 .1rem;
-    width: 98%;
+    width: 100%;
     height: 1rem;
     line-height: 1rem;
     font-size: .4rem;
@@ -46,8 +45,9 @@
     color: #666;
     background: #F8F8F8;
 }
-.dingdan .dingdan-title{
-    padding:0 .2rem;
+
+.dingdan .dingdan-title {
+    padding: 0 .2rem;
     height: 1.7rem;
     line-height: 1.7rem;
 }
@@ -61,30 +61,79 @@
     float: right;
     color: red;
 }
-.list{
-    padding:0 .2rem;
-    height:2.4rem;
-}
-.list li{
-    width:100%;
-    height:100%;
-}
-.list li .left{
-    display: inline-block;
-    width:2rem;
-    height:2rem;
-}
-.list li .left img{
-    display: inline-block;
-    width: 100%;
-    height:100%;
-    line-height: 2.4rem;
-}
-.list .right{
-    display: inline-block;
-}
-.right
-.list .right1{
-    display: inline-block;
+
+.list {
+    padding: 0 .2rem;
+    height: 2.4rem;
 }
 
+.list li {
+    width: 100%;
+    height: 100%;
+}
+
+.list li .left {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle
+}
+
+.list li .left img {
+    /*display: inline-block;*/
+    width: 100%;
+    height: 100%;
+    vertical-align: middle
+}
+
+.list .right {
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+    vertical-align: top;
+}
+
+.right .rTitle {
+    margin-bottom: .3rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.right .guige {
+    color: #ccc;
+}
+
+.list .right1 {
+    display: inline-block;
+    float: right;
+    height: 2rem;
+}
+
+.list .right1 .price {
+    margin-bottom: .1rem;
+}
+.dingdan .bottom{
+    width:100%;
+    height: 1rem;
+    line-height: 1rem;
+}
+.bottom .jianshu{
+    padding:0 .2rem;
+    float: right;
+}
+.dingdan .bigBtn{
+    margin:0 .2rem;
+    display: inline-block;
+    float: right;
+}
+.bigBtn .btn{
+    width:2rem;
+    height: .8rem;
+    font-size:.32rem;
+    border:1px solid #000;
+    border-radius: .18rem;
+}
